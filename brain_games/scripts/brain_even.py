@@ -1,44 +1,39 @@
+#!/usr/bin/env python3
 from random import randint
-from brain_games.cli import welcome_user
-from brain_games.cli import name
+import prompt
 
-def brain_even():
+
+def is_even(number):
+    return number % 2 == 0
+
+
+def main():
     print("Welcome to the Brain Games!")
-    
-    welcome_user()
+    name = prompt.string('May I have your name? ')
+    print(f"Hello, {name}!")
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    
-    questinon = randint(1, 100)
-    print(f"Question: {questinon}")
-    
-    answer = input()
-    print(f"Your answer: {answer}")
-
     n = 0
-    while n<3:
-        if questinon % 2 == 0 and answer == "yes":
+    while n < 3:
+        questinon = randint(1, 100)
+        print(f"Question: {questinon}")
+
+        if is_even(questinon):
+            correct_answer = "yes"
+        else:
+            correct_answer = "no"
+
+        answer = prompt.string("Your answer: ")
+
+        if answer == correct_answer:
             print("Correct!")
-            n = n + 1
-        
-        elif questinon % 2 == 0 and answer == "no":
+            n += 1
+        else:
             print("'no' is wrong answer ;(. Correct answer was 'yes'.")
             print(f"Let's try again,{name}!")
-            break
+            return
 
-        elif questinon % 2 != 0 and answer == "no":
-            print("Correct!")
-            n = n + 1
-
-        elif questinon % 2 != 0 and answer == "yes":
-            print("'yes' is wrong answer ;(. Correct answer was 'no'.")
-            print(f"Let's try again,{name}!")
-            break
-    
     print(f"Congratuletions,{name}!")
 
-        
-    
 
-        
-
-
+if __name__ == '__main__':
+    main()
