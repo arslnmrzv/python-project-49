@@ -22,7 +22,7 @@ def main():
         
         print(f"Question: {random_num1, random_sign, random_num2}")
         answer = prompt.string("Your answer: ")
-        if answer == correct_answer:
+        if answer == str(correct_answer):
             print("Correct!")
             n += 1
         else:
