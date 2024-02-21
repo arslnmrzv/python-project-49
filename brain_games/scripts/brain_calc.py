@@ -2,6 +2,8 @@
 import random
 
 import prompt
+
+
 def main():
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
@@ -18,8 +20,7 @@ def main():
         elif random_sign == "-":
             correct_answer = random_num1 - random_num2
         elif random_sign == "*":
-            correct_answer == random_num1 * random_num2
-        
+            correct_answer = random_num1 * random_num2
         print(f"Question: {random_num1, random_sign, random_num2}")
         answer = prompt.string("Your answer: ")
         if answer == str(correct_answer):
@@ -31,6 +32,7 @@ def main():
             return
 
     print(f"Congratuletions,{name}!")
+
 
 if __name__ == '__main__':
     main()
