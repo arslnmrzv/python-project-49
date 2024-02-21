@@ -2,12 +2,14 @@
 from random import randint
 import prompt
 
+
 def gcd(num1, num2):
     if num2 == 0:
         return num1
     else:
         return gcd(num2, num1 % num2)
-    
+
+
 def main():
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
@@ -17,9 +19,7 @@ def main():
     while n < 3:
         random_num1 = randint(0, 100)
         random_num2 = randint(0, 100)
-        
         print(f"Question: {random_num1} {random_num2}")
-        
         answer = prompt.string("Your answer: ")
 
         if answer == gcd(random_num1, random_num2):
@@ -31,6 +31,6 @@ def main():
             return
     print(f"Congratuletions,{name}!")
 
+
 if __name__ == '__main__':
     main()
-
