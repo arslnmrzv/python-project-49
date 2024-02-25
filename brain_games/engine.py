@@ -8,8 +8,8 @@ def main(brain_game_name):
     print()
     n = 0
     while n < 3:
-        question = brain_game_name.question
-        correct_answer = brain_game_name.correct_answer
+        question = brain_game_name.game()
+        correct_answer = brain_game_name.game()
         print(f"Question: {questinon}")
         answer = prompt.string("Your answer: ")
         if answer == correct_answer:
