@@ -21,7 +21,7 @@ def main():
             correct_answer = random_num1 - random_num2
         elif random_sign == "*":
             correct_answer = random_num1 * random_num2
-        print(f"Question: {random_num1, random_sign, random_num2}")
+        print(f"Question: {random_num1} {random_sign} {random_num2}")
         answer = prompt.string("Your answer: ")
         if answer == str(correct_answer):
             print("Correct!")
