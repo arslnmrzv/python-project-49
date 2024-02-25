@@ -9,7 +9,7 @@ def engine(brain_game_name):
     n = 0
     while n < 3:
         question, correct_answer = brain_game_name.game()
-        print(f"Question: {questinon}")
+        print(f"Question: {question}")
         answer = prompt.string("Your answer: ")
         if answer == correct_answer:
             print("Correct!")

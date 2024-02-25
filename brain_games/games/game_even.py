@@ -10,7 +10,7 @@ def is_even(number):
 
 def game():
     question = randint(1, 100)
-    if is_even(questinon):
+    if is_even(question):
         correct_answer = "yes"
     else:
         correct_answer = "no"
