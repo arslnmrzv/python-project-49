@@ -21,4 +21,3 @@ def game():
     game_prog[miss_index] = ".."
     question = f"{game_prog}"
     return question, correct_answer
-

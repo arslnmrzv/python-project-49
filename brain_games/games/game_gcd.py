@@ -9,8 +9,8 @@ def gcd(num1, num2):
         return num1
     else:
         return gcd(num2, num1 % num2)
-    
-    
+
+
 def game():
     random_num1 = random.randint(0, 100)
     random_num2 = random.randint(0, 100)
