@@ -5,7 +5,6 @@ def engine(brain_game_name):
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
     print(brain_game_name.DESCRIPTION)
-    print()
     n = 0
     while n < 3:
         question, correct_answer = brain_game_name.game()

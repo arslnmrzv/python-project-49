@@ -19,5 +19,5 @@ def game():
     miss_index = randint(0, len(game_prog)-1)
     correct_answer = str(game_prog[miss_index])
     game_prog[miss_index] = ".."
-    question = f"{game_prog}"
+    question = " ".join(map(str, game_prog))
     return question, correct_answer
