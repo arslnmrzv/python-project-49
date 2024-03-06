@@ -15,7 +15,7 @@ def engine(brain_game_name):
             print("Correct!")
             n += 1
         else:
-            print(f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.")
+            print(f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.")  # noqa: E501
             print(f"Let's try again, {name}!")
             return
     print(f"Congratulations, {name}!")
