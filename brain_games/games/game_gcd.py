@@ -2,7 +2,7 @@
 import random
 
 
-DESCRIPTION = 'What is the result of the expression?'
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def gcd(num1, num2):
