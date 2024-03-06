@@ -16,7 +16,7 @@ def get_progression(first_num, len_num, step):
 
 def game():
     game_prog = get_progression(randint(0, 10), randint(5, 8), randint(2, 3))
-    miss_index = randint(0, len(game_prog)-1)
+    miss_index = randint(0, len(game_prog) - 1)
     correct_answer = str(game_prog[miss_index])
     game_prog[miss_index] = ".."
     question = " ".join(map(str, game_prog))
