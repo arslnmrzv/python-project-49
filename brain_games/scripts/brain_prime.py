@@ -2,8 +2,9 @@
 from brain_games.games import prime
 from brain_games.engine import engine
 
-"""Start brain-prime game"""
+
 def main():
+    """Start brain-prime game"""
     engine(prime)
 
 

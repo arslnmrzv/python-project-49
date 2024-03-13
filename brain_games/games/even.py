@@ -3,12 +3,14 @@ from random import randint
 
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-"""Make even check"""
+
 def is_even(number):
+    """Make even check"""
     return number % 2 == 0
 
-"""Ask question and give answer"""
+
 def game():
+    """Ask question and give answer"""
     question = randint(1, 100)
     if is_even(question):
         correct_answer = "yes"

@@ -2,8 +2,9 @@
 from brain_games.games import progression
 from brain_games.engine import engine
 
-"""Start brain-progression game"""
+
 def main():
+    """Start brain-progression game"""
     engine(progression)
 
 

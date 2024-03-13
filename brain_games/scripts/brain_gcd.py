@@ -2,8 +2,9 @@
 from brain_games.games import gcd
 from brain_games.engine import engine
 
-"""Start brain-gcd game"""
+
 def main():
+    """Start brain-gcd game"""
     engine(gcd)
 
 

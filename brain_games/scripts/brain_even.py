@@ -2,8 +2,9 @@
 from brain_games.games import even
 from brain_games.engine import engine
 
-"""Start brain-even game"""
+
 def main():
+    """Start brain-even game"""
     engine(even)
 
 

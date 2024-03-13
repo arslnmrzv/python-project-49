@@ -2,8 +2,9 @@
 from brain_games.games import calc
 from brain_games.engine import engine
 
-"""Start brain-calc game"""
+
 def main():
+    """Start brain-calc game"""
     engine(calc)
 
 

@@ -3,8 +3,9 @@ import random
 
 DESCRIPTION = 'What is the result of the expression?'
 
-"""Make calculation programm"""
+
 def calc(num1, num2, sig):
+    """Make calculation programm"""
     if sig == "+":
         int_answer = num1 + num2
         return int_answer
@@ -15,8 +16,9 @@ def calc(num1, num2, sig):
         int_answer = num1 * num2
         return int_answer
 
-"""Ask question and give answer"""
+
 def game():
+    """Ask question and give answer"""
     random_num1 = random.randint(1, 10)
     random_num2 = random.randint(1, 10)
     sign = ["+", "-", "*"]
