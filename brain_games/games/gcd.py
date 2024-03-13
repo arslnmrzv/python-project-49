@@ -3,14 +3,14 @@ import random
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
-
+"""Make gcd check"""
 def gcd(num1, num2):
     if num2 == 0:
         return num1
     else:
         return gcd(num2, num1 % num2)
 
-
+"""Ask question and give answer"""
 def game():
     random_num1 = random.randint(0, 100)
     random_num2 = random.randint(0, 100)
