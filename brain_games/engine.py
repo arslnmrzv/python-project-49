@@ -1,14 +1,14 @@
 import prompt
 
 
-def engine(brain_game_name):
+def engine(brain_game):
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
-    print(brain_game_name.DESCRIPTION)
+    print(brain_game.DESCRIPTION)
     n = 0
     while n < 3:
-        question, correct_answer = brain_game_name.game()
+        question, correct_answer = brain_game.game()
         print(f"Question: {question}")
         answer = prompt.string("Your answer: ")
         if answer == correct_answer:

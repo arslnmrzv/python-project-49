@@ -1,8 +1,19 @@
-#!/usr/bin/env python3
 import random
 
 
 DESCRIPTION = 'What is the result of the expression?'
+
+
+def calc(num1, num2, sig):
+    if sig == "+":
+        int_answer = num1 + num2
+        return int_answer
+    elif sig == "-":
+        int_answer = num1 - num2
+        return int_answer
+    elif sig == "*":
+        int_answer = num1 * num2
+        return int_answer
 
 
 def game():
@@ -11,13 +22,5 @@ def game():
     sign = ["+", "-", "*"]
     random_sign = random.choice(sign)
     question = (f"{random_num1} {random_sign} {random_num2}")
-    if random_sign == "+":
-        int_answer = random_num1 + random_num2
-        correct_answer = str(int_answer)
-    elif random_sign == "-":
-        int_answer = random_num1 - random_num2
-        correct_answer = str(int_answer)
-    elif random_sign == "*":
-        int_answer = random_num1 * random_num2
-        correct_answer = str(int_answer)
+    correct_answer = str(calc(random_num1, random_num2, random_sign))
     return question, correct_answer
